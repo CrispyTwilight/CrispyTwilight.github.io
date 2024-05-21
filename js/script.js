@@ -1,6 +1,7 @@
 /*
     Auth: John O'Neal
-	Date: 05/01/2023
+	Date Created: 05/01/2023
+    Date Updated: 05/21/2024
 	Desc: This is the main JavaScript file for the portfolio site at CrispyTwilight.github.io.
 */
 

@@ -1,6 +1,7 @@
 /*
     Auth: John O'Neal
-    Date: 05/01/2023
+    Date Created: 05/01/2023
+    Date Updated: 05/21/2024
     Desc: This is the main css file for CrispyTwilight.github.io. It contains all the styling.
     Target Audience: General Public / Future Employers
 */
@@ -32,6 +33,7 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     background: var(--bg-color);
     color: var(--text-color);
 }
