@@ -1,13 +1,12 @@
 /*
     Auth: John O'Neal
 	Date: 05/01/2023
-	Desc: This is the main JavaScript file for the portfolio website.
+	Desc: This is the main JavaScript file for the portfolio site at CrispyTwilight.github.io.
 */
 
 /*==================== toggle icon navbar ====================*/
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
-
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x')
@@ -24,7 +23,6 @@ window.onscroll = () => {
         let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
-
 
         if (top >= offset && top < offset + height) {
             navLinks.forEach(links => {
@@ -43,7 +41,6 @@ window.onscroll = () => {
     menuIcon.classList.remove('bx-x')
     navbar.classList.remove('active')
 };
-
 
 /*==================== scroll reveal ====================*/
 ScrollReveal({
@@ -96,9 +93,8 @@ document.querySelector('#emailSubject').addEventListener('input', function(e) {
     if (e.target.value.length > 50) e.target.value = e.target.value.slice(0, 50);
 });
 
-
+/*==================== dynamic copyright year ====================*/
 document.getElementById('year').textContent = new Date().getFullYear();
-
 
 /*==================== typed js ====================*/
 const typed = new Typed('.multiple-text', {

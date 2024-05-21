@@ -1,7 +1,7 @@
 /*
     Auth: John O'Neal
     Date: 05/01/2023
-    Desc: This is the main css file for the website. It contains all the styling.
+    Desc: This is the main css file for CrispyTwilight.github.io. It contains all the styling.
     Target Audience: General Public / Future Employers
 */
 
@@ -26,7 +26,6 @@
 }
 
 html {
-    scroll-snap-type: y proximity;
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -38,7 +37,6 @@ body {
 }
 
 section {
-    scroll-snap-align: start;
     min-height: 100vh;
     padding: 0 9%;
 }
@@ -167,6 +165,7 @@ span {
 
 .btn {
     display: inline-block;
+    text-align: center;
     padding: 1rem 2.8rem;
     background: var(--main-color);
     border-radius: 4rem;
@@ -288,12 +287,12 @@ span {
 /* ----- Portfolio styles ----- */
 .portfolio {
     background: var(--second-bg-color);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 100vh;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
 }
 
 .portfolio h2 {
@@ -338,7 +337,7 @@ span {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 0 4rem;
+    padding: 0 2rem;
     transform: translateY(100%);
     transition: 0.5s ease;
 }
@@ -360,8 +359,8 @@ span {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     background: var(--text-color);
     border-radius: 50%;
 }
@@ -481,7 +480,7 @@ span {
     }
 
     section {
-        padding: 10rem 3% 2rem;
+        padding: 0 3%;
     }
 
     .services {
@@ -494,6 +493,7 @@ span {
 
     .contact {
         min-height: auto;
+        margin-top: 4rem;
     }
 
     .footer {
@@ -528,7 +528,7 @@ span {
         margin: 3rem 0;
     }
 
-    .home {
+    .home-wrapper {
         flex-direction: column;
     }
 
@@ -545,7 +545,7 @@ span {
         margin-top: 4rem;
     }
 
-    .about {
+    .about-wrapper {
         flex-direction: column-reverse;
     }
 
@@ -565,15 +565,18 @@ span {
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
-@media (max-width: 617px) {
+@media (max-width: 575px) {
     .portfolio-container {
-        grid-template-columns: (1fr);
+        grid-template-columns: 1fr;
     }
 
+    #portfolio {
+        height: fit-content;
+    }
 }
+
 
 
 @media (max-width: 450px) {
